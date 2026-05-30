@@ -145,6 +145,17 @@ nav{
 }
 
 </style>
+<script>
+function toggleContact() {
+    var contact = document.getElementById("contact-info");
+
+    if (contact.style.display === "none") {
+        contact.style.display = "block";
+    } else {
+        contact.style.display = "none";
+    }
+}
+</script>
 </head>
 
 <body>
@@ -158,8 +169,12 @@ nav{
     <a href="https://youtube.com/@skd_playess?si=y77nr95pzKHoeMiC">Youtube</a>
     <a href="#">Gaming Tips</a>
     <a href="#">Tournaments</a>
-    <a href="#">Contact</a>
+    <a href="#" onclick="toggleContact()">Contact</a>
 </nav>
+<div id="contact-info" style="display:none; padding:15px; background:#111; color:white;">
+    <p>📞 Phone: 9792966088</p>
+    <p>📧 Email: skdisd2468@gmail.com</p>
+</div>
 
 <section class="hero">
     <h1>Welcome to SKD Playess</h1>
