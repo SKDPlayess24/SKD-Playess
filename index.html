@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SKDPlayess24</title>
+<title>SKD Playess - Gaming Community</title>
 
 <meta name="description" content="SKD Playess is a gaming website for BGMI players. Get gaming updates, downloads, tips, tournaments and more.">
 
@@ -126,8 +126,17 @@ footer{
 
 @media(max-width:768px){
 
-.logo{
+.name{
     font-size:2rem;
+}
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .hero h1{
@@ -159,9 +168,10 @@ function toggleContact() {
 </head>
 
 <body>
+  <img src="logo.jpg" alt="SKD Playess Logo" class="logo">
 
 <header>
-    <h1 class="logo">SKD PLAYESS</h1>
+    <h1 class="name">SKD PLAYESS</h1>
 </header>
 
 <nav>
